@@ -1,0 +1,12 @@
+es:
+  devise:
+    sessions:
+      signed_in: "Has iniciado sesión correctamente."
+      signed_out: "Has cerrado sesión."
+      invalid: "Email o contraseña inválidos."
+    registrations:
+      signed_up: "Te has registrado correctamente."
+      updated: "Tu cuenta ha sido actualizada."
+      destroyed: "Tu cuenta ha sido eliminada."
+    failure:
+      unauthenticated: "Por favor, inicia sesión para continuar."

@@ -1,0 +1,18 @@
+<h1>Bienvenido a Summa</h1>
+<p>Aquí puedes gestionar tus ideas y proyectos artísticos.</p>
+
+<h2>Mis Ideas</h2>
+<ul>
+  <% @ideas.each do |idea| %>
+    <li>
+      <strong><%= link_to idea.titulo, idea %></strong><br>
+      <%= idea.descripcion %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to 'Nueva Idea', new_idea_path, class: 'btn btn-primary' %>
+
+<h2>Mis Obras</h2>
+<ul>
+  <% @obras.each do |obra| %>
